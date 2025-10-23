@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rofiat Adebayo · Data Analyst Portfolio</title>
+  <meta name="description" content="Rofiat Adebayo — Data Analyst. Power BI, SQL, Excel. Selected analytics projects and contact details." />
+  <style>
+    :root{
+      --bg: #0f172a;          /* slate-900 */
+      --panel: #111827;       /* gray-900 */
+      --card: #0b1220;        /* deep navy */
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #94a3b8;       /* slate-400 */
+      --brand: #60a5fa;       /* blue-400 */
+      --accent: #34d399;      /* emerald-400 */
+      --border: #1f2937;      /* gray-800 */
+      --chip: #0b2a45;        /* muted blue */
+      --link: #93c5fd;        /* blue-300 */
+      --shadow: 0 8px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text); background: radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 60%) , radial-gradient(1000px 600px at 120% 10%, #0b2a45 0%, transparent 40%), var(--bg);
+    }
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1024px; margin:0 auto; padding:24px}
+
+    /* Header */
+    header{display:flex; gap:20px; align-items:center; padding:24px 0;}
+    .avatar{width:72px; height:72px; border-radius:50%; border:2px solid var(--border); box-shadow:var(--shadow); object-fit:cover}
+    .title h1{margin:0; font-size:28px; letter-spacing:.3px}
+    .title p{margin:4px 0 0; color:var(--muted)}
+    .chips{margin-top:8px; display:flex; flex-wrap:wrap; gap:8px}
+    .chip{background:var(--chip); color:#cfe7ff; padding:6px 10px; border-radius:999px; border:1px solid #1f3b5c; font-size:13px}
+
+    /* Nav */
+    nav{margin:8px 0 24px; display:flex; gap:14px; flex-wrap:wrap}
+    nav a{padding:8px 12px; border:1px solid var(--border); border-radius:10px; background:linear-gradient(180deg, #0b1220 0%, #0a0f1a 100%);}
+
+    /* Sections */
+    section{margin:28px 0 40px}
+    h2{font-size:20px; margin:0 0 12px}
+    .panel{background:linear-gradient(180deg,#0a0f1a,#0a0e16); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow)}
+
+    /* Hero CTA */
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:8px}
+    .btn{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text); font-weight:600}
+    .btn.primary{background:linear-gradient(180deg,#1f3b5c,#0e1e33); color:#dbeafe; border-color:#1f3b5c}
+
+    /* Projects grid */
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:16px}
+    .card{grid-column: span 12; padding:18px; border:1px solid var(--border); border-radius:var(--radius); background:linear-gradient(180deg,#0b1220 0%, #0a0f1a 100%); box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .card p{margin:6px 0 10px; color:var(--muted)}
+    .tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+    .tag{font-size:12px; border:1px solid #1e293b; background:#0b1b2e; color:#b9e2ff; padding:4px 8px; border-radius:999px}
+    .row{display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; margin-top:10px}
+
+    @media(min-width:700px){
+      .card{grid-column: span 6}
+    }
+
+    /* Skills */
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .skill{padding:8px 10px; border:1px solid var(--border); border-radius:10px; background:#0b1220}
+
+    /* Footer */
+    footer{margin:40px 0 20px; color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/00000000?v=4" alt="Rofiat Adebayo avatar (replace with your photo URL)" />
+      <div class="title">
+        <h1>Rofiat Adebayo</h1>
+        <p>Data Analyst — Power BI • SQL • Excel • Data Storytelling</p>
+        <div class="chips">
+          <span class="chip">Retail & E‑commerce</span>
+          <span class="chip">Fintech Analytics</span>
+          <span class="chip">KPI & Margin Analysis</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="mailto:adebayorofiat004@gmail.com">Contact Me</a>
+          <a class="btn" href="https://linkedin.com/in/rofiat-adebayo" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/Rofiat-Adebayo" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="projects">
+      <h2>📊 Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Adidas US Sales Analysis (Power BI)</h3>
+          <p>Interactive report exploring sales by product, region, and channel; MoM trends and profit vs. operating margin.</p>
+          <div class="row">
+            <div class="tags">
+              <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Retail</span>
+            </div>
+            <div class="links">
+              <a href="PASTE_YOUR_FABRIC_LINK" target="_blank" rel="noopener">Live Dashboard →</a>
+              &nbsp;|&nbsp;
+              <a href="https://github.com/Rofiat-Adebayo/Adidas-US-Sales-Analysis" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Adventure Works Sales Report</h3>
+          <p>End-to-end BI report: model, DAX measures, and visuals for product, customer, and channel performance.</p>
+          <div class="row">
+            <div class="tags">
+              <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Star Schema</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Rofiat-Adebayo/Adventure-Works-Sales-Report" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Fintech Transactions Dashboard</h3>
+          <p>Payments analytics: pay-in/out trends, success rate, MoM revenue, and dispute monitoring.</p>
+          <div class="row">
+            <div class="tags">
+              <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Fintech</span>
+            </div>
+            <div class="links">
+              <a href="#" onclick="return false;">Live (coming soon)</a>
+              &nbsp;|&nbsp;
+              <a href="#" onclick="return false;">Repo (coming soon)</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>SQL Portfolio · Case Studies</h3>
+          <p>Cleaning, joins, window functions, and KPI queries for real business questions.</p>
+          <div class="row">
+            <div class="tags">
+              <span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">T-SQL</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/Rofiat-Adebayo/SQL-Portfolio-Case-Studies" target="_blank" rel="noopener">Repo →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>🧰 Skills & Tools</h2>
+      <div class="panel" style="padding:16px">
+        <div class="skills">
+          <span class="skill">Power BI (DAX, Power Query)</span>
+          <span class="skill">SQL (PostgreSQL, SQL Server)</span>
+          <span class="skill">Excel (Pivot, Power Pivot)</span>
+          <span class="skill">Data Modeling</span>
+          <span class="skill">Time-series & MoM/YoY</span>
+          <span class="skill">KPI & Margin Analysis</span>
+          <span class="skill">Storytelling & Documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>👋 About</h2>
+      <div class="panel" style="padding:16px">
+        <p>I'm a Data Analyst who enjoys turning messy data into clear, actionable insights. I build dashboards that highlight trends, explain the “so what,” and support better decisions.</p>
+        <p><strong>Current focus:</strong> Retail, E‑commerce & Fintech analytics — sales performance by product, region, and channel; transaction success and revenue trends.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <div class="panel" style="padding:16px">
+        <p>Email: <a href="mailto:adebayorofiat004@gmail.com">adebayorofiat004@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/rofiat-adebayo" target="_blank" rel="noopener">linkedin.com/in/rofiat-adebayo</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Rofiat Adebayo · Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
